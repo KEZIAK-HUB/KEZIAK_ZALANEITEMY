@@ -2,8 +2,8 @@ ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-RegisterServerEvent("niemiecki216:telefon")
-AddEventHandler("niemiecki216:telefon", function()
+RegisterServerEvent("keziak:telefon")
+AddEventHandler("keziak:telefon", function()
     local xPlayer = ESX.GetPlayerFromId(source)
 
     local telefon = xPlayer.getInventoryItem("phone")["count"]
