@@ -19,8 +19,8 @@ RegisterServerEvent("keziak:radio")
 AddEventHandler("keziak:radio", function()
     local xPlayer = ESX.GetPlayerFromId(source)
 
-    local telefon = xPlayer.getInventoryItem("radio")["count"]
-     if telefon > 0 then
+    local radio = xPlayer.getInventoryItem("radio")["count"]
+     if radio > 0 then
      xPlayer.removeInventoryItem("radio", radio)
 	 TriggerClientEvent('esx:showNotification', source, '~r~Twoje ~o~radio ~p~sie ~y~zalalalo!')
 
