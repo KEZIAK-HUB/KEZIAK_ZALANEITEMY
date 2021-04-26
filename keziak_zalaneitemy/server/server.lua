@@ -21,7 +21,7 @@ AddEventHandler("keziak:radio", function()
 
     local telefon = xPlayer.getInventoryItem("radio")["count"]
      if telefon > 0 then
-     xPlayer.removeInventoryItem("phone", telefon)
+     xPlayer.removeInventoryItem("radio", radio)
 	 TriggerClientEvent('esx:showNotification', source, '~r~Twoje ~o~radio ~p~sie ~y~zalalalo!')
 
     end
